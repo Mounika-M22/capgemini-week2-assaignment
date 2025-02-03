@@ -1,6 +1,6 @@
 class Logger:
     def __init__(self, log_type="info"):
-        self.log_type = log_type  # Store log type
+        self.log_type = log_type  
 
     def log(self, message):
         if self.log_type == "error":
@@ -11,7 +11,7 @@ class Logger:
             print(f"[INFO]: {message}")
 
 
-# Creating objects with different log types
+
 obj1 = Logger("error")
 obj1.log("This is an error message.")
 
